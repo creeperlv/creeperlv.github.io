@@ -1,0 +1,37 @@
+.CodeBackground{
+    overflow: auto;
+    background: #0d0d0d;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: #0A0A0A 0px 10px 15px 1px;
+}
+.CodeBackground:hover{
+    box-shadow: #0A0A0A 0px 15px 20px 1px;
+}
+pre{
+    transition-duration: 0.4s;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: "Ubuntu Mono", monospace
+}
+.CodeKW{
+    color: #28E
+}
+.CodeCL{
+    color: #4CB;
+}
+.CodeCO{
+    color: #6CB;
+}
+.CodeNUM{
+    color: #9D9;
+}
+.CodeINT{
+    color: #BD9;
+}
+.CodePA{
+    color:#D91;
+}
+.CodeCM{
+    color:#171;
+}

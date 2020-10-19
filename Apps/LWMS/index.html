@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../Styles/cldesignv2/cldesignv2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLUNL</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="titleDiv" style="display: flex;">
+        <p class="pageTitle" style="width: fit-content;">LWMS</p>
+        <div style="text-align: right; vertical-align:middle; width: max-content; margin-left: 25px;">
+            <a class="AccentButton" href="./index.html">Home Page</a>
+            <a class="AccentButton" href="https://github.com/creeperlv/LWMS" target="_blankwindow">Source Code</a>
+        </div>
+    </div>
+    <div class="bodyDiv">
+
+        <div class="cardDiv" style="background-color: red;">
+            <p class="t3">This software is still in active development! Contents and APIs may complete change and code
+                is
+                unstable!</p>
+        </div>
+        <div class="AccentCardDiv">
+            <p class="t3">Overview</p>
+        </div>
+        <div class="cardDiv">
+            <p>LWMS is short for <b>L</b>ight<b>W</b>eight <b>M</b>anaged <b>S</b>erver.</p>
+            <p>This software is designed to implement a server that administrator can controll almost all stage of the
+                server through pipelines and manage commands.</p>
+            <p>This server provide following pipeline process units by default:</p>
+            <ul>
+                <li>DefaultStaticFileUnit - Directly send requested file.</li>
+                <li>DefaultStreamProcessUnit - Directly write data to the output stream.</li>
+            </ul>
+            <p>Following pipeline units are embeded with the pipeline:</p>
+            <ul>
+                <li>LogUnit - Registered before all pipeline units to log requests</li>
+                <li>ErrorResponseUnit - Registered after all units to send http error message and pages such as send
+                    code 404 and 404 page when all units cannot handle one request</li>
+            </ul>
+        </div>
+        <div class="cardDiv">
+            <li>
+                The software is licensed under the MIT License.
+            </li>
+        </div>
+    </div>
+</body>
+
+</html>
