@@ -12,12 +12,21 @@
    See the License for the specific language governing permissions and
    limitations under the License. */
 /* 
-Version: 0.0.6.0
+Version: 0.0.7.0
 */
+
+/*
+Font "Sarasa" is work by be5invis and its repo is https://github.com/be5invis/Sarasa-Gothic and it is licensed under SIL OFL Version 1.1.
+Comment font-face block out to avoid using it.
+*/
+@font-face{
+  font-family: 'Sarasa Mono SC';
+  src : url('https://creeperlv.github.io/3rd/sarasa-mono-sc-regular.ttf');
+}
 body {
   color: white;
   background: #1e1e1e;
-  font-family: "Ubuntu Mono", 'Consolas', monospace;
+  font-family: 'Sarasa Mono SC','Sarasa Mono HC','Sarasa Mono J','Sarasa Mono K',"Ubuntu Mono", 'Consolas', monospace;
 }
 p {
   color: white;
