@@ -26,6 +26,10 @@
             width: 100%;
         }
 
+        .MenuList {
+            font-size: 14px;
+        }
+
         .menudiv:hover {
             box-shadow: #111 0px 15px 20px 5px;
         }
@@ -104,29 +108,41 @@
     </div>
     <div style="margin-top:110px;" id="MainBody">
         <div class="ShowOnMobile" style="width:100%">
-                <button class="cldButton" onclick="ToggleMenu()" style="width:90%;margin-left: 5%;margin-right: 5%;text-align: left;">&#8801;　　Menu</button>
+            <button class="cldButton" onclick="ToggleMenu()"
+                style="width:90%;margin-left: 5%;margin-right: 5%;text-align: left;">&#8801;　　Menu</button>
         </div>
         <div class="menudiv HideOnMobile" id="menu" style="overflow: auto;">
             <ul style="margin: 0px;padding:0px;">
                 <li class="MenuList">
                     <a href="./home.html" target="MainContent">Home</a>
                 </li>
-                <p class="AccentText">Usages</p>
+                <p class="AccentText t4">Usages</p>
                 <li class="MenuList">
                     <a href="./Usage/get-started.html" target="MainContent">Get Started</a>
                 </li>
                 <li class="MenuList">
                     <a href="./Usage/external-tools.html" target="MainContent">External Tools</a>
                 </li>
-                <p class="AccentText">Modification</p>
+                <p>
+                    <a class="NormalA t4" href="./Codes/index.html" target="MainContent">Codes</a>
+                </p>
+                <a class="NormalA" href="./Codes/Site13Kernel/index.html" target="MainContent">Site13Kernel</a>
                 <li class="MenuList">
-                    <a href="./Modification/from-source.html" target="MainContent">From Source</a>
+                    <a href="./Codes/Site13Kernel.Core.html" target="MainContent">Site13Kernel.Core</a>
+                </li>
+                <a class="NormalA   " href="./Codes/Site13Kernel.UnityEngine/index.html"
+                    target="MainContent">Site13Kernel.UnityEngine</a>
+                <li class="MenuList">
+                    <a href="./Codes/Site13Kernel.UnityEngine/Site13Kernel.Core.html"
+                        target="MainContent">Site13Kernel.Core</a>
                 </li>
                 <li class="MenuList">
-                    <a href="./Modification/TheExternalKernal.html" target="MainContent">The External Kernel</a>
+                    <a href="./Codes/Site13Kernel.UnityEngine/Site13Kernel.Core.Controllers.html"
+                        target="MainContent">Site13Kernel.Core.Controllers</a>
                 </li>
+                <p class="AccentText">Codes in Assets/SCPAssets</p>
                 <li class="MenuList">
-                    <a href="./Modification/Site-13-Behavior.html" target="MainContent">Site-13-Behavior.dll</a>
+                    <a href="./Codes/Codes/Site13Kernel.Core.html" target="MainContent">Site13Kernel.Core</a>
                 </li>
             </ul>
         </div>
