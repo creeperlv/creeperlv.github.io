@@ -21,6 +21,22 @@
         <p>In this section, the wiki will talk about the rebuilt codes in Site-13-V2 repository. Old codes are too
             messy, scary and hard to maintain.</p>
     </div>
+    <div class="AccentCardDiv">
+        <p class="t2">Design Principal</p>
+    </div>
+    <div class="cardDiv">
+        <p>
+            Codes in Site-13 should follow principle below:
+        </p>
+        <ul>
+            <li>Use less MonoBehaviour messages.</li>
+            <li>Put codes in Site13Kernel and Site13Kernel.UnityEngine as much as possible to reduce comile time.</li>
+            <li>Use <span class="KeyWords">AggressiveInlining</span> option on most of methods.</li>
+        </ul>
+    </div>
+    <div class="AccentCardDiv">
+        <p class="t2">Code Structure</p>
+    </div>
     <div class="cardDiv">
         <p>Codes of Site-13 are splited into two parts: i) Codes in Tools/CommonTools/; ii) Codes directly stored in
             Site-13-V2/Assets/SCPAssets/Codes.</p>
