@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../Styles/cldesignv2/cldesignv2.css">
+    <link rel=stylesheet href="../../Styles/cldesignv2/CodeStyle.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LibCLCC.NET</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="titleDiv" style="display: flex;">
+        <p class="pageTitle" style="width: fit-content;">LibCLCC.NET</p>
+        <div style="text-align: right; vertical-align:middle; width: max-content; margin-left: 25px;">
+            <a class="AccentButton" href="./index.html">Home Page</a>
+            <a class="AccentButton" href="https://github.com/creeperlv/LibCLCC.NET" target="_blankwindow">Source Code</a>
+        </div>
+    </div>
+    <div class="bodyDiv">
+
+        <div class="cardDiv" style="background-color: red;">
+            <p class="t3">This library is still in active development! Contents may completely change and code is
+                unstable!</p>
+        </div>
+        <div class="AccentCardDiv">
+            <p class="t3">Overview</p>
+        </div>
+        <div class="cardDiv">
+            <p>LibCLCC.NET is short for <i>Lib</i>rary of <i>C</i>reeper <i>L</i>v's <i>C</i>ommon <i>C</i>ode in <i>.NET</i>.</p>
+            <p class="t3">Goal</p>
+            <p>The goal of this library is to make life easier and reduce rewriting every code every time a new project/tool is created.
+
+                Also, the library is aimed on providing functions in pure C# and compatible with Unity3D (at least the main library).</p>
+            <p class="t3">Features</p>
+                <ul>
+                    <li>A General Purpose Scanner</li>
+                    <li>ConnectableList - Help concatenate two lists</li>
+                    <li>ChainAction</li>
+                    <li>BreakableFunc - A breakable function chain, returning true will break the chain</li>
+                    <li>ObservableData - A wrapper of data that will invoke breakable functions when the data is changed</li>
+                    <li>ObservableDisposableData - A wrapper of disposable data that will invoke breakable functions when the data is changed</li>
+                    <li>KVPair - A key-value pair</li>
+                    <li>KVList - A list which T is KVPair</li>
+                    <li>ReactableList - A list that invoke BreakableFunc for Add,Remove,RemoveAt,Clear</li>
+                </ul>
+        </div>
+        <div class="cardDiv">
+            <p>There are a few usages:</p>
+            <p>Use CStyleScanner which is derived from GeneralPurposeScanner to build C Compiler</p>
+            <p>Use CommandLineScanner which is derived from GeneralPurposeScanner to scan a string like a command line</p>
+        </div>
+        <div class="AccentCardDiv">
+            <p class="t3">Installation</p>
+        </div>
+        <div class="cardDiv">
+            <p>The library is currently published to <a href="https://www.nuget.org/packages/LibCLCC.NET/">NuGet.org</a>, you can install it manually download and install it from there.</p>
+            <p>https://www.nuget.org/packages/LibCLCC.NET/</p>
+            <pre class="CodeBackground">dotnet add package LibCLCC.NET</pre>
+        </div>
+        <div class="cardDiv">
+            <li>
+                The library is licensed under the MIT License.
+            </li>
+        </div>
+    </div>
+</body>
+
+</html>
