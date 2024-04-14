@@ -141,6 +141,7 @@ li {
 /* Forms */
 
 input[type="text"],
+input[type="password"],
 textarea {
   outline: none;
   transition-duration: 0.4s;
@@ -152,11 +153,13 @@ textarea {
   box-shadow: #111 0px 5px 15px 1px;
 }
 input[type="text"]:hover,
+input[type="password"]:hover,
 textarea:hover {
   background: #666;
   box-shadow: #111 0px 10px 20px 1px;
 }
 input[type="text"]:focus,
+input[type="password"]:focus,
 textarea:focus {
   background: #454545;
   box-shadow: #111 0px 5px 15px 1px;
