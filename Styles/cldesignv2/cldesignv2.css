@@ -12,7 +12,7 @@
    See the License for the specific language governing permissions and
    limitations under the License. */
 /* 
-Version: 0.0.7.0
+Version: 0.0.8.0
 */
 
 /*
@@ -141,6 +141,10 @@ li {
 /* Forms */
 
 input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="url"],
 input[type="password"],
 textarea {
   outline: none;
@@ -153,12 +157,20 @@ textarea {
   box-shadow: #111 0px 5px 15px 1px;
 }
 input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="number"]:hover,
+input[type="tel"]:hover,
+input[type="url"]:hover,
 input[type="password"]:hover,
 textarea:hover {
   background: #666;
   box-shadow: #111 0px 10px 20px 1px;
 }
 input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus {
   background: #454545;
