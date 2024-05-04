@@ -191,6 +191,12 @@ textarea:invalid {
   border: 1px solid #AF0000 ;
   box-shadow: #111 0px 5px 15px 1px;
 }
+input:invalid:focus,
+textarea:invalid:focus {
+  background: #554545;
+  border: 1px solid #9F0000 ;
+  box-shadow: #411 0px 5px 15px 1px;
+}
 /* Scrollbars */
 ::-webkit-scrollbar {
   transition-duration: 0.4s;
