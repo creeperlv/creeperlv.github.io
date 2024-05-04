@@ -176,6 +176,10 @@ textarea:focus {
   background: #454545;
   box-shadow: #111 0px 5px 15px 1px;
 }
+input:invalid,
+textarea:invalid {
+  box-shadow: #CF0000 0px 10px 20px 1px;
+}
 /* Scrollbars */
 ::-webkit-scrollbar {
   transition-duration: 0.4s;
