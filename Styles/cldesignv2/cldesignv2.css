@@ -154,6 +154,7 @@ textarea {
   padding: 8px;
   border: none;
   background: #555;
+  border: 1px solid #555 ;
   box-shadow: #111 0px 5px 15px 1px;
 }
 input[type="text"]:hover,
@@ -164,6 +165,7 @@ input[type="url"]:hover,
 input[type="password"]:hover,
 textarea:hover {
   background: #666;
+  border: 1px solid #666 ;
   box-shadow: #111 0px 10px 20px 1px;
 }
 input[type="text"]:focus,
@@ -174,11 +176,20 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus {
   background: #454545;
+  border: 1px solid #454545 ;
   box-shadow: #111 0px 5px 15px 1px;
+}
+input:invalid:hover,
+textarea:invalid:hover {
+  background: #766;
+  border: 1px solid #C00000 ;
+  box-shadow: #411 0px 10px 20px 1px;
 }
 input:invalid,
 textarea:invalid {
-  box-shadow: #CF0000 0px 10px 20px 1px;
+  background: #655;
+  border: 1px solid #AF0000 ;
+  box-shadow: #111 0px 5px 15px 1px;
 }
 /* Scrollbars */
 ::-webkit-scrollbar {
