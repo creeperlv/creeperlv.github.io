@@ -168,6 +168,74 @@ textarea:hover {
   border: 1px solid #666 ;
   box-shadow: #111 0px 10px 20px 1px;
 }
+.container {
+  display: block;
+  position: relative;
+  padding-left: 32px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.mark {
+  position: absolute;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  background-color: #555555;
+  box-shadow: #111 0px 5px 15px 1px;
+}
+
+
+.container:hover input ~ .mark {
+  background-color: #777;
+  box-shadow: #111 0px 10px 20px 1px;
+}
+.container:active input ~ .mark {
+  background-color: #666;
+}
+
+.container input:checked ~ .mark {
+  background-color: #28E;
+  box-shadow: #149 0px 5px 15px 1px;
+}
+.container input:checked:hover ~ .mark {
+  background-color: #39F;
+  box-shadow: #149 0px 10px 20px 1px;
+}
+
+.container input:checked:active ~ .mark {
+  background-color: #16D;
+  box-shadow: #149 0px 5px 20px 1px;
+}
+
+.mark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container input:checked ~ .mark:after {
+  display: block;
+}
+.container .mark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="number"]:focus,
