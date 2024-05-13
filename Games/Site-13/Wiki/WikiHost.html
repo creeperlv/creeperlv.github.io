@@ -26,6 +26,9 @@
             width: 100%;
         }
 
+        .AccentButton {
+            width: auto;
+        }
         .MenuList {
             font-size: 14px;
         }
@@ -97,16 +100,16 @@
 </head>
 
 <body>
-    <div class="titleDiv" style="display:flex;">
+    <div class="titleDiv" style="display:flex;flex-wrap: wrap;">
         <p class="pageTitle" style="word-wrap: break-word">What Happened to Site-13 - Wiki</p>
-        <div style="text-align: right; vertical-align:middle; float: right; width: fit-content; margin-left: 25px;">
+        <div style="display: flex; -ms-flex-wrap: wrap; -webkit-flex-wrap: wrap;flex-wrap: wrap;">
             <a class="AccentButton" href="../index.html">Home Page</a>
             <a class="AccentButton" href="https://github.com/creeperlv/Site-13-V2" target="_blankwindow">Source Code</a>
             <a class="AccentButton" href="./WikiHost.html">Wiki</a>
             <a class="AccentButton" href="../Downloads.html">Downloads</a>
         </div>
     </div>
-    <div style="margin-top:110px;" id="MainBody">
+    <div style="margin-top:200px;" id="MainBody">
         <div class="ShowOnMobile" style="width:100%">
             <button class="cldButton" onclick="ToggleMenu()"
                 style="width:90%;margin-left: 5%;margin-right: 5%;text-align: left;">&#8801;　　Menu</button>
